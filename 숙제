@@ -8,3 +8,5 @@ for i in df.columns:
     else:
         df[i].loc[60] = df[i].sum() # df의 colums를 for문으로 합계 계산
 df
+
+#nothing to commit, working tree clean 이러한 문제로 파일이 안올려져 이렇게라도 대체합니다 ㅡㅡ;;
