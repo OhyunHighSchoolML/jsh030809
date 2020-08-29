@@ -1,0 +1,10 @@
+import pandas as pd
+df = pd.read_excel('/content/mountain.xlsx')
+df
+df.loc[60] = None #칸 만들고 None
+for i in df.columns:
+    if(i == '구분'):
+        df[i].loc[60] = '2020년 8월 29일' #60번째 2020년 8월 29일 추가
+    else:
+        df[i].loc[60] = df[i].sum() # df의 colums를 for문으로 합계 계산
+df
